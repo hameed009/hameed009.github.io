@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abdul Hameed — IT Support Professional, Junior Software Engineer & Technician based in Karachi, Pakistan.">
+<meta property="og:title" content="Abdul Hameed | Portfolio">
+<meta property="og:description" content="From hardware roots to full-stack web development. Based in Karachi.">
+<title>Abdul Hameed | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-mono">AH.DEV</div>
+  <div class="preloader-bar-wrap">
+    <div class="preloader-bar"></div>
+  </div>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">AH.DEV</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="menu-link">About</a>
+  <a href="#skills" class="menu-link">Skills</a>
+  <a href="#experience" class="menu-link">Experience</a>
+  <a href="#projects" class="menu-link">Projects</a>
+  <a href="#education" class="menu-link">Education</a>
+  <a href="#goals" class="menu-link">Goals</a>
+  <a href="#contact" class="menu-link">Contact</a>
+</div>
+
+<!-- PARTICLES BG -->
+<div class="hero-particles"><canvas id="particleCanvas"></canvas></div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-content reveal">
+    <p class="hero-greeting">Hello, World! 👋</p>
+    <h1 class="hero-name">Abdul Hameed</h1>
+    <div class="hero-typewriter">
+      <span class="type-prefix">I am a</span>
+      <span id="typewriterText"></span>
+      <span class="cursor-blink"></span>
+    </div>
+    <p class="hero-bio">A technically grounded IT professional who diagnoses, repairs, and ships — from broken hardware to live web products. Based in Karachi, building things that work.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="assetes/Abdul_Hameed_CV.pdf" download class="btn-ghost"><i class="fa fa-download" style="margin-right:6px"></i>Download CV</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/hameed009" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/abdulhameed" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:ah3245571@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+      <a href="https://wa.me/923128629675" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orb-ring"></div>
+    <div class="orb-ring"></div>
+    <div class="orb-ring"></div>
+    <!-- HERO IMAGE -->
+    <div class="hero-img-wrap">
+      <div class="hero-img-glow"></div>
+      <div class="hero-img-ring"></div>
+      <img
+        src="assetes/pictures/hero_cropped.png"
+        alt="Abdul Hameed"
+        class="hero-img"
+        draggable="false"
+      />
+      <div class="hero-img-badge">
+        <span class="hero-badge-dot"></span>
+        Open to Work
+      </div>
+    </div>
+    <div class="float-icon" style="color:#00D4FF"><i class="fa fa-code"></i></div>
+    <div class="float-icon" style="color:#7B61FF"><i class="fab fa-js"></i></div>
+    <div class="float-icon" style="color:#FF6B6B"><i class="fab fa-html5"></i></div>
+    <div class="float-icon" style="color:#00D4FF"><i class="fa fa-database"></i></div>
+    <div class="float-icon" style="color:#7B61FF"><i class="fa fa-screwdriver-wrench"></i></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal-left">
+      <!-- 3D ABOUT IMAGE -->
+      <div class="about-3d-wrap" id="about3d">
+        <div class="about-3d-bg-glow"></div>
+        <div class="about-3d-border"></div>
+        <div class="about-3d-card">
+          <img
+            src="assetes/pictures/about_cropped.png"
+            alt="Abdul Hameed"
+            class="about-3d-img"
+            draggable="false"
+          />
+        </div>
+        <!-- floating labels -->
+        <div class="about-float-chip chip-top">
+          <i class="fa fa-screwdriver-wrench" style="color:var(--cyan);font-size:.75rem"></i>
+          Hardware Expert
+        </div>
+        <div class="about-float-chip chip-bottom">
+          <i class="fab fa-js" style="color:#f0db4f;font-size:.75rem"></i>
+          Web Developer
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <p class="about-tagline">From Hardware to Code</p>
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">The <span class="cyan">Story</span> Behind the Skills</h2>
+      <p class="about-text">I didn't start with code — I started with a screwdriver. For 3+ years I've been diagnosing and fixing mobile phones and laptops, learning how technology really works from the inside out. That hands-on mindset pushed me into software. Now I build real, functional web applications — not just templates. I'm based in Lyari, Karachi, and I'm on a mission to become a Full Stack Developer while representing a community underrepresented in Pakistan's tech scene.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num counter" data-target="100">0</div>
+          <div class="stat-label">Devices Repaired+</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num counter" data-target="3">0</div>
+          <div class="stat-label">Years Experience+</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num counter" data-target="3">0</div>
+          <div class="stat-label">Web Projects Built</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" style="padding: 6rem 0; max-width: 100%;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+    <div class="reveal">
+      <div class="section-tag">My Skillset</div>
+      <h2 class="section-title">Skills &amp; <span class="cyan">Expertise</span></h2>
+      <p class="section-subtitle">A blend of hardware know-how and growing software skills — built through real work, not just courses.</p>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="known">What I Know</button>
+        <button class="tab-btn" data-tab="learning">What I'm Learning</button>
+      </div>
+    </div>
+    <div class="skills-panel active" id="tab-known">
+      <div class="skills-cols">
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-wrench"></i> Hardware &amp; Troubleshooting</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-mobile-screen"></i> Mobile &amp; Laptop Repair</span><span class="skill-pct">95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-html5"></i> HTML / CSS</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-js"></i> JavaScript</span><span class="skill-pct">55%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-database"></i> SQL Server</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="50"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-wordpress"></i> WordPress</span><span class="skill-pct">55%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-table"></i> MS Office Suite</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-headset"></i> Customer Support</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills-panel" id="tab-learning">
+      <div class="skills-cols">
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-table-cells"></i> Advanced Excel <span class="in-progress-badge">In Progress</span></span><span class="skill-pct">40%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="40"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fa fa-layer-group"></i> Full Stack Web Dev <span class="in-progress-badge">In Progress</span></span><span class="skill-pct">35%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="35"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-react"></i> React.js <span class="in-progress-badge">In Progress</span></span><span class="skill-pct">20%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="20"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-node-js"></i> Node.js <span class="in-progress-badge">In Progress</span></span><span class="skill-pct">15%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="15"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name"><i class="fab fa-python"></i> Python <span class="in-progress-badge">In Progress</span></span><span class="skill-pct">10%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="10"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+    <div class="section-tag">Work History</div>
+    <h2 class="section-title">My <span class="cyan">Experience</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">Real-world work that built real skills — before, during, and alongside web development.</p>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal-left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="tl-title">Mobile &amp; Laptop Repair Technician</div>
+        <div class="tl-company"><i class="fa fa-location-dot" style="margin-right:4px"></i>Karachi</div>
+        <div class="tl-duration"><i class="fa fa-calendar" style="margin-right:4px"></i>2022 – Present</div>
+        <div class="tl-points">
+          <div class="tl-point">Diagnosed and resolved faults across 100s of mobile and laptop devices with high first-visit resolution rates.</div>
+          <div class="tl-point">Rebuilt device performance through component-level repairs, extending hardware lifespan.</div>
+          <div class="tl-point">Delivered clear technical guidance to non-technical customers, building trust and repeat business.</div>
+          <div class="tl-point">Maintained organised workshop with structured inventory management.</div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item reveal-right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="tl-title">Sales Associate</div>
+        <div class="tl-company"><i class="fa fa-store" style="margin-right:4px"></i>Garments Shop, Karachi</div>
+        <div class="tl-duration"><i class="fa fa-calendar" style="margin-right:4px"></i>Approx. 1 Year</div>
+        <div class="tl-points">
+          <div class="tl-point">Drove customer satisfaction through consultative product recommendations matching clients to right products.</div>
+          <div class="tl-point">Managed end-to-end sales transactions with accuracy and inventory tracking.</div>
+          <div class="tl-point">Developed strong interpersonal and communication skills in a fast-paced retail environment.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Featured <span class="cyan">Projects</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">Real products solving real problems — built from scratch with zero frameworks.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-icon"><i class="fa fa-chart-bar" style="color:var(--cyan)"></i></div>
+      <h3 class="project-title">Product Comparison Platform</h3>
+      <p class="project-desc">A fully responsive web app that solves a real consumer problem: comparing multiple products side-by-side before buying. Features structured filtering, dynamic layout, and clean information hierarchy.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="proj-btn primary"><i class="fa fa-eye" style="margin-right:4px"></i>View Project</a>
+        <a href="https://github.com/abdulhameed" class="proj-btn"><i class="fab fa-github" style="margin-right:4px"></i>GitHub</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-icon"><i class="fa fa-user-circle" style="color:var(--purple)"></i></div>
+      <h3 class="project-title">Personal Portfolio Website</h3>
+      <p class="project-desc">Designed and developed a multi-section professional portfolio from scratch. Features a project gallery, skills showcase, and contact section. Fully mobile-responsive with sub-2-second load performance.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Mobile-First</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="proj-btn primary"><i class="fa fa-eye" style="margin-right:4px"></i>View Project</a>
+        <a href="https://github.com/abdulhameed" class="proj-btn"><i class="fab fa-github" style="margin-right:4px"></i>GitHub</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-icon"><i class="fa fa-cart-shopping" style="color:var(--coral)"></i></div>
+      <h3 class="project-title">E-Commerce UI — Frontend</h3>
+      <p class="project-desc">A complete e-commerce storefront UI including product listing pages, a functional shopping cart, and checkout flow — all built with vanilla JavaScript and zero frameworks. Production-grade UX thinking.</p>
+      <div class="project-tags">
+        <span class="tag">Vanilla JS</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">No Frameworks</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="proj-btn primary"><i class="fa fa-eye" style="margin-right:4px"></i>View Project</a>
+        <a href="https://github.com/abdulhameed" class="proj-btn"><i class="fab fa-github" style="margin-right:4px"></i>GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+    <div class="section-tag">Academic Background</div>
+    <h2 class="section-title">My <span class="cyan">Education</span></h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal-left">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-level">Intermediate</div>
+      <div class="edu-subject">Software Engineering</div>
+      <div class="edu-inst"><i class="fa fa-building-columns" style="margin-right:4px;color:var(--cyan)"></i>Karachi Board</div>
+      <span class="edu-badge badge-progress"><i class="fa fa-circle-notch fa-spin" style="font-size:0.65rem"></i> In Progress</span>
+    </div>
+    <div class="edu-card reveal-right">
+      <div class="edu-icon">📋</div>
+      <div class="edu-level">Matriculation</div>
+      <div class="edu-subject">Science Group</div>
+      <div class="edu-inst"><i class="fa fa-building-columns" style="margin-right:4px;color:var(--cyan)"></i>Karachi Board</div>
+      <div style="margin-top:0.5rem"><span class="edu-badge badge-done"><i class="fa fa-check" style="font-size:0.65rem"></i> Completed — Grade A</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GOALS ===== -->
+<section id="goals">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+    <div class="section-tag">The Roadmap</div>
+    <h2 class="section-title">My <span class="cyan">Goals</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">Every great developer started somewhere. Here's where I'm going.</p>
+  </div>
+  <div class="goals-grid">
+    <div class="goal-card active-phase reveal">
+      <div class="goal-phase-icon">🚀</div>
+      <div class="goal-phase">Short-Term</div>
+      <div class="goal-timeframe">6 – 12 Months</div>
+      <div class="goal-list">
+        <div class="goal-item">Complete Intermediate in Software Engineering</div>
+        <div class="goal-item">Master React.js and build 2 full-stack projects</div>
+        <div class="goal-item">Land first freelance web development client</div>
+        <div class="goal-item">Reach 100+ GitHub commits</div>
+      </div>
+    </div>
+    <div class="goal-card reveal">
+      <div class="goal-phase-icon">⚡</div>
+      <div class="goal-phase">Mid-Term</div>
+      <div class="goal-timeframe">1 – 2 Years</div>
+      <div class="goal-list">
+        <div class="goal-item">Become a Full Stack Developer (MERN Stack)</div>
+        <div class="goal-item">Get a remote junior developer role</div>
+        <div class="goal-item">Build a SaaS product solving a local problem</div>
+      </div>
+    </div>
+    <div class="goal-card reveal">
+      <div class="goal-phase-icon">🏆</div>
+      <div class="goal-phase">Long-Term</div>
+      <div class="goal-timeframe">3 – 5 Years</div>
+      <div class="goal-list">
+        <div class="goal-item">Lead developer or own a development agency</div>
+        <div class="goal-item">Mentor developers from underserved communities in Karachi</div>
+        <div class="goal-item">Contribute meaningfully to open source</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LANGUAGES ===== -->
+<section id="languages">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+    <div class="section-tag">Communication</div>
+    <h2 class="section-title">Languages I <span class="cyan">Speak</span></h2>
+  </div>
+  <div class="lang-row">
+    <div class="lang-item reveal">
+      <div class="lang-ring-wrap">
+        <svg viewBox="0 0 120 120" width="120" height="120">
+          <circle class="lang-bg" cx="60" cy="60" r="54"/>
+          <circle class="lang-fill" cx="60" cy="60" r="54" stroke="var(--cyan)" data-pct="100"/>
+        </svg>
+        <div class="lang-ring-center">
+          <div class="lang-pct" id="pct-urdu">0%</div>
+        </div>
+      </div>
+      <div class="lang-name">Urdu</div>
+      <div class="lang-level">Native Speaker</div>
+    </div>
+    <div class="lang-item reveal">
+      <div class="lang-ring-wrap">
+        <svg viewBox="0 0 120 120" width="120" height="120">
+          <circle class="lang-bg" cx="60" cy="60" r="54"/>
+          <circle class="lang-fill" cx="60" cy="60" r="54" stroke="var(--purple)" data-pct="65"/>
+        </svg>
+        <div class="lang-ring-center">
+          <div class="lang-pct" id="pct-eng">0%</div>
+        </div>
+      </div>
+      <div class="lang-name">English</div>
+      <div class="lang-level">Working Proficiency<br><small style="color:var(--cyan);font-size:0.72rem">Actively Improving</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" style="padding: 6rem 0; max-width: 100%;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem;">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's <span class="cyan">Connect</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Got a project? Need IT support? Or just want to say hello? I'm always open to a conversation.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div>
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <div><div class="contact-card-label">Email</div><div class="contact-card-val">ah3245571@gmail.com</div></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <div><div class="contact-card-label">Phone</div><div class="contact-card-val">0312-8629675</div></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-location-dot"></i></div>
+            <div><div class="contact-card-label">Location</div><div class="contact-card-val">Lyari South, Karachi, Pakistan</div></div>
+          </div>
+        </div>
+        <a href="https://wa.me/923128629675" class="wa-btn" target="_blank">
+          <i class="fab fa-whatsapp" style="font-size:1.2rem"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="fname" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" id="femail" placeholder="john@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" id="fsubject" placeholder="Project Inquiry">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="fmessage" placeholder="Tell me about your project or question..."></textarea>
+          </div>
+          <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+            <i class="fa fa-paper-plane" style="margin-right:6px"></i>Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa fa-circle-check" style="margin-right:6px"></i>
+            Message sent! Abdul will get back to you soon.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">Abdul Hameed &copy; 2026 &nbsp;·&nbsp; All Rights Reserved</p>
+    <p class="footer-made">Made with <span>❤️</span> in <strong>Karachi</strong></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
