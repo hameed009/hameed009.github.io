@@ -208,66 +208,22 @@ function animatePct(el, target) {
 }
 
 /* ===== CONTACT FORM ===== */
-
-async function handleSubmit() {
-
+function handleSubmit() {
   const btn = document.getElementById('submitBtn');
-
   const name = document.getElementById('fname').value.trim();
   const email = document.getElementById('femail').value.trim();
-  const subject = document.getElementById('fsubject').value.trim();
-  const message = document.getElementById('fmessage').value.trim();
-
-  if (!name || !email) {
-    alert('Please fill in Name and Email.');
-    return;
-  }
-
+  if (!name || !email) { alert('Please fill in Name and Email.'); return; }
   btn.classList.add('loading');
   btn.textContent = 'Sending...';
-
-  try {
-
-    const response = await fetch('https://formspree.io/f/maqvddew', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        subject: subject,
-        message: message
-      })
-    });
-
-    if (response.ok) {
-
-      btn.style.display = 'none';
-
-      document
-        .getElementById('formSuccess')
-        .classList.add('show');
-
-      document.getElementById('fname').value = '';
-      document.getElementById('femail').value = '';
-      document.getElementById('fsubject').value = '';
-      document.getElementById('fmessage').value = '';
-
-    } else {
-      alert('Failed to send message.');
-    }
-
-  } catch (error) {
-    alert('Something went wrong.');
-  }
-
-  btn.classList.remove('loading');
-  btn.textContent = 'Send Message';
+  setTimeout(() => {
+    btn.style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+    document.getElementById('fname').value = '';
+    document.getElementById('femail').value = '';
+    document.getElementById('fsubject').value = '';
+    document.getElementById('fmessage').value = '';
+  }, 1800);
 }
-
-
 
 /* ═══════════════════════════════════════════════════════
    ABOUT SECTION — 3D Mouse-Track Tilt Effect
@@ -344,3 +300,4 @@ async function handleSubmit() {
     imgWrap.style.marginTop  = '0';
   });
 })();
+
